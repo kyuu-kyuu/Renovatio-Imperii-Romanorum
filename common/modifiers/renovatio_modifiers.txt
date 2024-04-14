@@ -1,0 +1,39 @@
+jupiter_modifier = {
+	icon = prestige_positive
+
+	diplomacy_per_piety_level = 1
+	stress_gain_mult = -0.2
+	monthly_prestige = 0.3
+}
+
+mars_modifier = {
+	icon = martial_positive
+
+	martial_per_piety_level = 1
+	prowess_per_piety_level = 1
+	monthly_county_control_growth_add = 0.1
+}
+
+sol_modifier = {
+	icon = magic_positive
+
+	stewardship_per_piety_level = 1
+	domain_limit = 1
+	domain_tax_mult = 0.2
+}
+
+minerva_modifier = {
+	icon = learning_positive
+
+	learning_per_piety_level = 1
+	life_expectancy = 10
+	monthly_learning_lifestyle_xp_gain_mult = 0.25
+}
+
+venus_modifier = {
+	icon = love_positive
+
+	intrigue_per_piety_level = 1
+	personal_scheme_power_mult = 0.2
+	years_of_fertility = 10
+}

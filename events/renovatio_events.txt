@@ -1,0 +1,265 @@
+namespace = renovatio_event
+
+# Religion Events
+
+renovatio_event.0001 = { # Choosing a Patron God (major)
+	type = character_event
+	title = renovatio_event.0001.t 
+	desc = renovatio_event.0001.desc
+	theme = faith
+	override_background = garden
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = renovatio_event.0001.a
+		add_character_modifier = jupiter_modifier
+	}
+
+	option = {
+		name = renovatio_event.0001.b
+		add_character_modifier = mars_modifier
+	}
+
+	option = {
+		name = renovatio_event.0001.c
+		add_character_modifier = sol_modifier
+	}
+
+	option = {
+		name = renovatio_event.0001.d
+		add_character_modifier = minerva_modifier
+	}
+
+	option = {
+		name = renovatio_event.0001.e
+		add_character_modifier = venus_modifier
+	}
+}
+
+renovatio_event.0002 = { # Choosing a Patron God (minor)
+	type = character_event
+	title = renovatio_event.0002.t 
+	desc = renovatio_event.0002.desc
+	theme = faith
+	override_background = garden
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = renovatio_event.0002.a
+		add_character_modifier = jupiter_modifier
+	}
+
+	option = {
+		name = renovatio_event.0002.b
+		add_character_modifier = mars_modifier
+	}
+
+	option = {
+		name = renovatio_event.0002.c
+		add_character_modifier = sol_modifier
+	}
+
+	option = {
+		name = renovatio_event.0002.d
+		add_character_modifier = minerva_modifier
+	}
+
+	option = {
+		name = renovatio_event.0002.e
+		add_character_modifier = venus_modifier
+	}
+}
+
+renovatio_event.0003 = { # Have daughter(s) become Vestal Virgin(s)
+	type = character_event
+	title = renovatio_event.0003.t
+	desc = renovatio_event.0003.desc
+	theme = faith
+
+	immediate = {
+
+		every_child = {
+			limit = { 
+				is_female = yes
+				age < 9
+				age > 7
+			}
+			add_to_list = valid_children_r
+		}
+
+		random_in_list = {
+			list = valid_children_r
+			limit = {
+				NOT = {
+					this = scope:daughter_1
+					this = scope:daughter_2
+				}
+			}
+			save_scope_as = daughter_1
+		}
+
+		random_in_list = {
+			list = valid_children_r
+			limit = {
+				NOT = {
+					this = scope:daughter_1
+					this = scope:daughter_2
+				}
+			}
+			save_scope_as = daughter_2
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	lower_center_portrait = {
+		character = scope:daughter_1
+	}
+	lower_center_left_portrait = {
+		character = scope:daughter_2
+	}
+
+	option = {
+		name = renovatio_event.0003.a # ask for daughter 1 to be a vestal virgin
+		scope:daughter_1 = {
+			add_character_flag = maybe_vestal_virgin
+		}
+		trigger_event = {
+			id = renovatio_event.0004
+			days = { 3 11 }
+		}
+	}
+
+	if = {
+		limit = { 
+			daughter_1 = { has_trait = twin }
+			daughter_2 = { has_trait = twin }
+		}
+		option = {
+			name = renovatio_event.0003.b # ask for daughter 2 to be a vestal virgin
+			scope:daughter_2 = {
+				add_character_flag = maybe_vestal_virgin
+			}
+		}
+		option = {
+			name = renovatio_event.0003.c # ask for daughter 1 and 2 to be a vestal virgin
+			scope:daughter_1 = {
+				add_character_flag = maybe_vestal_virgin
+			}
+			scope:daughter_2 = {
+				add_character_flag = maybe_vestal_virgin
+			}
+		}
+	}
+
+	option = {
+		name = renovatio_event.0003.d # don't ask for either to be a vestal virgin
+		trigger_event = {
+			id = renovatio_event.0005
+			days = { 3 11 }
+		}
+	}
+}
+
+renovatio_event.0004 = { # negative reply from pontifex maximus
+	type = character_event
+	title = renovatio_event.0004.t # Ridicule! (hof refuses vestal virginship)
+	desc = renovatio_event.0004.desc
+
+	immediate = {
+		
+	}
+
+	theme = faith
+	override_background = council_chamber
+
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+
+	right_portrait = {
+		character = root.faith.religious_head
+		animation = disapproval
+	}
+
+	lower_center_portrait = {
+		character = scope:daughter_1
+	}
+
+	lower_center_left_portrait = {
+		character = scope:daughter_2
+	}
+
+	option = {
+		name = renovatio_event.0004.a
+		if = {
+			limit = {
+				OR = {
+					has_trait = zealous
+					has_trait = humble
+					has_trait = loyal
+				}
+			}
+			add_stress = 45
+		}
+		else = {
+			add_stress = 30
+		}
+	}
+}
+
+renovatio_event.0005 = { # positive reply from pontifex maximus
+	type = character_event
+	title = renovatio_event.0005.t
+	desc = renovatio_event.0005.desc
+
+	theme = faith
+	override_background = council_chamber
+
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	right_portrait = {
+		character = root.faith.religious_head
+		animation = personality_zealous
+	}
+
+	lower_center_portrait = {
+		character = scope:daughter_1
+	}
+
+	lower_center_left_portrait = {
+		character = scope:daughter_2
+	}
+
+	option = {
+		name = renovatio_event.0005.a
+		scope:daughter_1 = {
+			if = {
+				limit = { has_character_flag = maybe_vestal_virgin }
+				add_trait = vestal_virgin
+			}
+		}
+		if = {
+			limit = { exists = scope:daughter_2 }
+			scope:daughter_2 = {
+				if = {
+					limit = { has_character_flag = maybe_vestal_virgin }
+					add_trait = vestal_virgin
+				}
+			}
+		}
+	}
+}
+

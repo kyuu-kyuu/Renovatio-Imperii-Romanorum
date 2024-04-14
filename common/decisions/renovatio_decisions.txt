@@ -1,0 +1,185 @@
+renovatio_decision = {
+
+    picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+
+    major = no
+    
+    desc = "renovatio_decision_desc"
+    selection_tooltip = "renovatio_decision_tooltip"
+
+    is_shown = {
+    }
+
+    cost = {
+        gold = 100
+    }
+
+    effect = {
+        add_character_modifier = {
+            modifier = vow_of_poverty_modifier
+        }       
+    }
+
+    cooldown = { years = 5 }
+
+    ai_potential = {
+        always = no
+    }
+
+    ai_will_do = {
+        base = 0
+    }
+}
+
+become_vestal_virgin_decision = {
+    picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+
+    major = yes
+    desc = "vestal_virgin_decision_desc"
+    selection_tooltip = "vestal_virgin_decision_tooltip"
+
+    is_shown = {
+        religion = religion:mythologia_romanorum
+        gender = this:female
+    }
+
+    cost = {
+        piety = 2000
+    }
+
+    effect = {
+        add_trait = { vestal_virgin }
+    }
+
+    ai_ potential = {
+        always = yes
+    }
+    
+    ai_will_do = {
+        base = 100
+    }
+
+    ai_goal = yes
+}
+
+devote_to_god_decision = {
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+
+    desc = "devote_to_god_desc"
+    selection_tooltip = "devote_to_god_tooltip"
+    major = yes
+
+    is_shown = {
+        religion_tag = roman_religion
+		faith = {
+			has_doctrine_parameter = select_patron_god_active
+		}
+        NOT = {
+            has_character_modifier = jupiter_modifier
+            has_character_modifier = mars_modifier
+            has_character_modifier = sol_modifier
+            has_character_modifier = minerva_modifier
+            has_character_modifier = venus_modifier
+        }
+	}
+
+    cost = {
+        piety = 100
+    }
+
+    is_valid = {
+    }
+
+    is_valid_showing_failures_only = {
+        piety >= 0 
+        age >= 10
+    }
+
+    cooldown = { years = 1 }
+
+    effect = {
+        trigger_event = renovatio_event.0001
+    }
+
+    ai_will_do = {
+        base = 100
+    }
+    
+    ai_check_interval = 120
+}
+
+change_devote_god_decision = {
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+
+    desc = "change_devote_god_desc"
+    selection_tooltip = "change_devote_god_tooltip"
+
+    is_shown = {
+        religion_tag = roman_religion
+		faith = {
+			has_doctrine_parameter = select_patron_god_active
+		}
+        OR = {
+            has_character_modifier = jupiter_modifier
+            has_character_modifier = mars_modifier
+            has_character_modifier = sol_modifier
+            has_character_modifier = minerva_modifier
+            has_character_modifier = venus_modifier
+        }
+	}
+
+    cost = {
+        piety = 500
+    }
+
+    is_valid = {
+    }
+
+    is_valid_showing_failures_only = {
+        piety >= 0 
+        age >= 10
+    }
+
+    cooldown = { years = 5 }
+
+    effect = {
+        if = {
+            limit = {
+                has_character_modifier = jupiter_modifier
+            }
+            remove_character_modifier = jupiter_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = mars_modifier
+            }
+            remove_character_modifier = mars_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = sol_modifier
+            }
+            remove_character_modifier = sol_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = minerva_modifier
+            }
+            remove_character_modifier = minerva_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = venus_modifier
+            }
+            remove_character_modifier = venus_modifier
+        }
+
+        trigger_event = renovatio_event.0002
+    }
+
+    ai_will_do = {
+        base = 0
+    }
+    
+    ai_check_interval = 120
+}

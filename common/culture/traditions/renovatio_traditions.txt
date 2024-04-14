@@ -1,0 +1,183 @@
+# Combat Traditions
+
+tradition_roman_martial = {
+	category = combat
+
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = swords.dds
+	}
+
+	is_shown = {
+		culture = roman
+	}
+
+	can_pick ={
+	}
+
+	parameters = {
+		unlock_maa_legion = yes
+		unlock_maa_equites = yes
+	}
+
+	character_modifier = {
+		
+		heavy_infantry_damage_mult = 0.25
+		heavy_infantry_max_size_add = 4
+		heavy_cavalry_damage_mult = 0.25
+		heavy_cavalry_max_size_add = 2
+		men_at_arms_recruitment_cost = -0.15
+		light_cavalry_damage_mult = -0.15
+		light_cavalry_toughness_mult = -0.15
+		skirmishers_damage_mult = -0.15
+		skirmishers_toughness_mult = -0.15
+	}	
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 0
+	}
+}
+
+# Realm Traditions
+
+tradition_patricians_and_plebeians = {
+	category = realm
+
+	layers = {
+		0 = learning
+		1 = western
+		3 = 6.dds
+		4 = laurel.dds
+	}
+
+	is_shown = {
+		this = culture:roman
+	}
+
+	can_pick = {		
+	}
+
+	parameters = {
+		poorly_educated_leaders_distrusted = yes
+		dislikes_marrying_outside_of_culture = yes
+		peasant_and_populist_factions_less_common = yes
+		# NOT FINISHED
+	}
+
+	province_modifier = {
+		
+	}
+
+	character_modifier = {
+		barons_and_minor_landholders_opinion = 10
+		dread_decay_mult = -0.3
+		different_culture_opinion = -10
+		opinion_of_liege = 30
+		parochial_opinion = 10
+		# NOT FINISHED
+	}
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_descendants_of_romulus = {
+	category = realm
+
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = romulus.dds
+	}
+
+	is_shown = {
+		culture = roman
+	}
+
+	can_pick = {
+	}
+
+	parameters = {
+	}
+
+	province_modifier {
+		development_growth_factor = 0.15
+	}
+
+	character_modifier = {
+		owned_legend_spread_mult = 0.25
+		city_holding_build_speed = -0.3
+		castle_holding_build_speed = -0.3
+	}
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_bellicose = { is_in_list = traits }
+						culture_pillar:ethos_egalitarian = { is_in_list = traits }
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_egalitarian_or_courtly_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_culture_county = {
+							count >= 50
+							any_county_province = {
+								geographical_region = custom_eastern_roman_empire
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = culture_in_roman_empire_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 0
+	}
+}
+
+# Societal Traditions

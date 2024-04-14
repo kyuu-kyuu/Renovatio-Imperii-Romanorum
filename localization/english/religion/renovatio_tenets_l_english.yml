@@ -1,0 +1,12 @@
+﻿l_english: 
+
+ tenet_vestal_virgins_name:0 "Vestal Virgins"
+ tenet_vestal_virgins_desc:0 "While typically women don't hold any sort of political office, the Vestal Virgins are a special class of women who hold great power in our religious practice."
+ doctrine_parameter_vestal_virgins_active:0 "Women of this faith may become #V Vestal Virgins#! if their [head_of_faith|E] permits it"
+
+ tenet_imperial_cult_name:0 "Imperial Cult"
+ tenet_imperial_cult_desc:0 "The Imperators of ages past aren't just men; the great heroes of Rome are deities themselves. Through their eternal guidance, we can reclaim the glory once lost."
+
+ tenet_patron_gods_name:0 "Patron Gods"
+ tenet_patron_gods_desc:0 "We worship a pantheon of many gods, from Jupiter to Pluto, yet it cannot be claimed that believers do not feel certain attractions to specific gods that they seek to honor in a greater fashion."
+ doctrine_parameter_select_patron_god_active:1 "Rulers can [decide|E] to pick a God to devote themselves to, earning a specific bonus"

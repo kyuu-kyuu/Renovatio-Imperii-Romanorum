@@ -1,0 +1,85 @@
+doctrine_core_tenets = {
+	group = "core_tenets"
+	number_of_picks = 3
+
+	############################
+	# Hellenic Faith Tenets	    #
+	############################
+
+	tenet_vestal_virgins = {
+		icon = tenet_vestal_virgins
+		piety_cost = {
+			value = faith_tenet_cost_high
+		}
+
+		is_shown = {
+			religion_tag = roman_religion	
+		}
+
+		can_pick = {	
+		}
+
+		parameters = {
+			vestal_virgins_active = yes
+		}
+
+		traits = {
+			virtues = { vestal_virgin }
+		}
+
+		character_modifier = {
+			
+		}
+	}
+
+	tenet_imperial_cult = {
+		icon = tenet_imperial_cult
+		piety_cost = {
+			value = faith_tenet_cost_high
+		}
+
+		is_shown = {
+			religion_tag = roman_religion	
+		}
+
+		can_pick = {			
+		}
+
+		parameters = {
+			legalism_modified_law_costs = yes
+		}
+
+		character_modifier = {
+			liege_opinion = 20
+			monthly_county_control_growth_add = 0.3
+		}
+
+		traits = {
+			virtues = { augustus }
+			sins = { lazy }
+		}
+	}
+
+	tenet_patron_gods = {
+		icon = tenet_patron_gods
+		piety_cost = {
+			value = faith_tenet_cost_high
+		}
+
+		is_shown = {
+			religion_tag = roman_religion	
+		}
+
+		can_pick = {			
+		}
+
+		parameters = {
+			select_patron_god_active = yes
+		}
+
+		traits = {
+			virtues = { brave }
+			sins = { craven }
+		}
+	}
+}

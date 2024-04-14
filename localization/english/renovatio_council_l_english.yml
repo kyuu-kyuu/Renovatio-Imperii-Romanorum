@@ -1,0 +1,11 @@
+﻿# Hellenism (Augur/Seeress) (Flamen/Vestal) (Pontifex) (Pontiff/Sybil)
+ councillor_court_chaplain_hellenism_religion_county:0 "Flamen"
+ councillor_court_chaplain_hellenism_religion_county_female:0 "Vestal"
+ councillor_court_chaplain_hellenism_religion_county_possessive:0 "Flamen's"
+ councillor_court_chaplain_hellenism_religion_county_female_possessive:0 "Vestal's"
+ councillor_court_chaplain_hellenism_religion_duchy:0 "Pontifex"
+ councillor_court_chaplain_hellenism_religion_duchy_possessive:0 "Pontifex's"
+ councillor_court_chaplain_hellenism_religion_kingdom:0 "Pontiff"
+ councillor_court_chaplain_hellenism_religion_kingdom_female:0 "Sybil"
+ councillor_court_chaplain_hellenism_religion_kingdom_possessive:0 "Pontiff's"
+ councillor_court_chaplain_hellenism_religion_kingdom_female_possessive:0 "Sybil's"

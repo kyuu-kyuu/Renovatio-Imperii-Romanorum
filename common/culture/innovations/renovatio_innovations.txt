@@ -1,0 +1,15 @@
+@ballista = "gfx/interface/icons/culture_innovations/innovation_ballista.dds"
+
+innovation_ballista = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @ballista
+
+	potential = {
+		this = culture:roman
+	}
+
+	unlock_maa = ballista
+
+	flag = global_maa
+}

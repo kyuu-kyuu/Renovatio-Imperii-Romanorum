@@ -1,0 +1,30 @@
+vestal_virgin = {
+	category = fame
+	monthly_piety = 0.5
+	monthly_prestige = 0.5
+
+	valid_sex = female
+	minimum_age = 8
+
+	good = yes
+
+	same_faith_opinion = 20
+
+	name = {
+		desc = trait_vestal_virgin_name
+	}
+
+	desc = {
+		desc = trait_vestal_virgin_desc
+	}
+
+	potential = {
+		religion_tag = roman_religion
+	}
+
+	flag = can_not_marry
+	can_have_children = no
+	shown_in_ruler_designer = no
+	ai_sociability = very_low_negative_ai_value
+
+}

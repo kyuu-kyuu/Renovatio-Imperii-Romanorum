@@ -1,0 +1,162 @@
+﻿l_english:
+
+ #Hellenism
+ hellenism_religion:2 "Greco-Roman"
+ hellenism_religion_adj:2 "Greco-Roman"
+ hellenism_religion_adherent:2 "Greco-Roman"
+ hellenism_religion_adherent_plural:2 "Greco-Romans"
+ hellenism_religion_desc:0 "Hellenists worship the ancient Greek and Roman gods, said to reside on Mount Olympus. Each god has their own aspects and is venerated by their worshipers in their own way."
+
+ hellenism_high_god_name:0 "Zeus"
+ hellenism_high_god_name_2:0 "$hellenism_high_god_name$" # Optional translation alt
+ hellenism_high_god_name_possessive:0 "Zeus'"
+ hellenism_high_god_name_alternate:0 "The Thunderer"
+ hellenism_high_god_name_alternate_possessive:0 "The Thunderer's"
+ hellenism_good_god_poseidon:0 "Poseidon"
+ hellenism_good_god_athena:0 "Athena"
+ hellenism_good_god_ares:0 "Ares"
+ hellenism_good_god_hera:0 "Hera"
+ hellenism_good_god_apollo:0 "Apollo"
+ hellenism_good_god_artemis:0 "Artemis"
+ hellenism_good_god_hermes:0 "Hermes"
+ hellenism_good_god_aphrodite:0 "Aphrodite"
+ hellenism_devil_name:0 "Bacchus"
+ hellenism_devil_name_possessive:0 "Bacchus'"
+ hellenism_evil_god_menoetius:0 "Menoetius"
+ hellenism_evil_god_erinyes:0 "the Erinyes"
+ hellenism_priest_male:0 "Flamen"
+ hellenism_priest_male_plural:0 "Flamens"
+ hellenism_priest_female:0 "Vestal"
+ hellenism_priest_female_plural:0 "Vestals"
+ hellenism_priest_neuter:0 "Diviner"
+ hellenism_priest_neuter_plural:0 "Diviners"
+ hellenism_bishop_male:0 "Fetial"
+ hellenism_bishop_male_plural:0 "Fetials"
+ hellenism_death_deity_name:0 "Hades"
+ hellenism_death_deity_name_2:0 "$hellenism_death_deity_name$" # Optional translation alt
+ hellenism_death_deity_name_3:0 "$hellenism_death_deity_name$" # Optional translation alt
+ hellenism_death_deity_name_possessive:0 "Hades'"
+ hellenism_religious_symbol:0 "laurel"
+ hellenism_religious_symbol_2:0 "$hellenism_religious_symbol$" # Optional translation alt
+ hellenism_religious_symbol_3:0 "$hellenism_religious_symbol$" # Optional translation alt
+ hellenism_religious_text:0 "sacred chronicles"
+ hellenism_religious_text_2:0 "$hellenism_religious_text$" # Optional translation alt
+ hellenism_religious_text_3:0 "$hellenism_religious_text$" # Optional translation alt
+ hellenism_religious_head_title:0 "High Priest"
+ hellenism_divine_realm:0 "Olympus"
+ hellenism_divine_realm_2:0 "$hellenism_divine_realm$" # Optional translation alt
+ hellenism_divine_realm_3:0 "$hellenism_divine_realm$" # Optional translation alt
+ hellenism_witchgodname_hekate:0 "Hekate"
+ hellenism_witchgodname_hekate_possessive:0 "Hekate's"
+
+ hellenism_creator_god_name:0 "Gaia"
+ hellenism_creator_god_name_possessive:0 "Gaia's"
+ hellenism_health_god_name:0 "Asclepius"
+ hellenism_health_god_name_possessive:0 "Asclepius'"
+ hellenism_fertility_god_name:0 "Demeter"
+ hellenism_fertility_god_name_possessive:0 "Demeter's"
+ hellenism_wealth_god_name:0 "Hades"
+ hellenism_wealth_god_name_possessive:0 "Hades'"
+ hellenism_household_god_name:0 "Vesta"
+ hellenism_household_god_name_possessive:0 "Vesta's"
+ hellenism_fate_god_name:0 "the Moirai"
+ hellenism_fate_god_name_possessive:0 "the Moirai's"
+ hellenism_knowledge_god_name:0 "Athena"
+ hellenism_knowledge_god_name_possessive:0 "Athena's"
+ hellenism_war_god_name:0 "Ares"
+ hellenism_war_god_name_possessive:0 "Ares'"
+ hellenism_trickster_god_name:0 "Hermes"
+ hellenism_trickster_god_name_possessive:0 "Hermes'"
+ hellenism_night_god_name:0 "Nyx"
+ hellenism_night_god_name_possessive:0 "Nyx's"
+ hellenism_water_god_name:0 "Poseidon"
+ hellenism_water_god_name_possessive:0 "Poseidon's"
+
+ hellenic_pagan:0 "Hellenism"
+ hellenic_pagan_adj:0 "Hellenic"
+ hellenic_pagan_adherent:0 "Hellenist"
+ hellenic_pagan_adherent_plural:0 "Hellenists"
+
+ hellenic_pagan_old:0 "Old Hellenism"
+ hellenic_pagan_old_adj:0 "Old Hellenic"
+ hellenic_pagan_old_adherent:0 "Old Hellenist"
+ hellenic_pagan_old_adherent_plural:0 "Old Hellenists"
+
+ # Roman
+
+
+
+ roman_pagan:1 "Mythologia Romanorum"
+ roman_pagan_adj:1 "Romanic"
+ roman_pagan_adherent:1 "Romanist"
+ roman_pagan_adherent_plural:1 "Romanists"
+
+ roman_pagan_old:1 "Old Mythologia Romanorum"
+ roman_pagan_old_adj:1 "Old Romanic"
+ roman_pagan_adherent:1 "Romanist"
+ roman_pagan_adherent_plural:1 "Romanists"
+
+ roman_high_god_name:0 "Jupiter"
+ roman_high_god_name_possessive:0 "Jupiter's"
+ roman_high_god_name_alternate:0 "Jupiter"
+ roman_high_god_name_alternate_possessive:0 "Jupiter's"
+ roman_good_god_neptune:0 "Neptune"
+ roman_good_god_minerva:0 "Minerva"
+ roman_good_god_mars:0 "Mars"
+ roman_good_god_juno:0 "Juno"
+ roman_good_god_sol:0 "Sol"
+ roman_good_god_diana:0 "Diana"
+ roman_good_god_mercury:0 "Mercury"
+ roman_good_god_venus:0 "Venus"
+ roman_devil_name:0 "Orcus"
+ roman_devil_name_possessive:0 "Orcus'"
+ roman_evil_god_menoetius:0 "Menoetius"
+ roman_evil_god_erinyes:0 "the Dirae"
+ roman_priest_male:0 "Flamen"
+ roman_priest_male_plural:0 "Flamen"
+ roman_priest_female:0 "Vestal"
+ roman_priest_female_plural:0 "Vestals"
+ roman_priest_neuter:0 "Diviner"
+ roman_priest_neuter_plural:0 "Diviners"
+ roman_bishop_male:0 "Pontiff"
+ roman_bishop_male_plural:0 "Pontiffs"
+ roman_death_deity_name:0 "Pluto"
+ roman_death_deity_name_2:0 "$roman_death_deity_name$" # Optional translation alt
+ roman_death_deity_name_3:0 "$roman_death_deity_name$" # Optional translation alt
+ roman_death_deity_name_possessive:0 "Pluto's"
+ roman_religious_symbol:0 "laurel"
+ roman_religious_symbol_2:0 "$roman_religious_symbol$" # Optional translation alt
+ roman_religious_symbol_3:0 "$roman_religious_symbol$" # Optional translation alt
+ roman_religious_text:0 "sacred chronicles"
+ roman_religious_text_2:0 "$roman_religious_text$" # Optional translation alt
+ roman_religious_text_3:0 "$roman_religious_text$" # Optional translation alt
+ roman_religious_head_title:0 "Pontifex Maximus"
+ roman_religious_head_title_name:0 "College of Pontiffs"
+ roman_divine_realm:0 "Caelum"
+ roman_divine_realm_2:0 "$roman_divine_realm$" # Optional translation alt
+ roman_divine_realm_3:0 "$roman_divine_realm$" # Optional translation alt
+ roman_witchgodname_trivia:0 "Trivia"
+ roman_witchgodname_roman_possessive:0 "Trivia's"
+
+ roman_creator_god_name:0 "Terra"
+ roman_creator_god_name_possessive:0 "Terra's"
+ roman_health_god_name:0 "Aesculapius"
+ roman_health_god_name_possessive:0 "Aesculapius'"
+ roman_fertility_god_name:0 "Ceres"
+ roman_fertility_god_name_possessive:0 "Ceres'"
+ roman_wealth_god_name:0 "Pluto"
+ roman_wealth_god_name_possessive:0 "Pluto's"
+ roman_household_god_name:0 "Vesta"
+ roman_household_god_name_possessive:0 "Vesta's"
+ roman_fate_god_name:0 "the Parcae"
+ roman_fate_god_name_possessive:0 "the Parcae's"
+ roman_knowledge_god_name:0 "Minerva"
+ roman_knowledge_god_name_possessive:0 "Minerva's"
+ roman_war_god_name:0 "Mars"
+ roman_war_god_name_possessive:0 "Mars'"
+ roman_trickster_god_name:0 "Mercury"
+ roman_trickster_god_name_possessive:0 "Mercury's"
+ roman_night_god_name:0 "Nox"
+ roman_night_god_name_possessive:0 "Nox's"
+ roman_water_god_name:0 "Neptune"
+ roman_water_god_name_possessive:0 "Neptune's"

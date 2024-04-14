@@ -1,0 +1,15 @@
+on_game_start_after_lobby = {
+	effect = {
+        if = {
+            limit = {
+                game_start_date >= 867.1.1
+            }
+            every_culture_global = {
+                limit = {
+                    this = culture:roman
+                }
+                add_innovation = innovation_ballista
+            }
+        }
+    }
+}

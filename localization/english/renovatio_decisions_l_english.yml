@@ -1,0 +1,20 @@
+﻿l_english:
+ renovatio_decision:0 "Reno Vatio Decision"
+ renovatio_decision_desc:0 "Reno Vatio Desc"
+ renovatio_decision_tooltip:0 "Reno Vatio Tooltip"
+ renovatio_decision_confirm:0 "Reno Vatio Confirm"
+
+ become_vestal_virgin_decision:0 "Become a Vestal Virgin"
+ vestal_virgin_decision_desc:0 "I will become a Vestal Virgin"
+ vestal_virgin_decision_tooltip:0 "wozers"
+ vestal_virgin_decision_confirm:0 "Fetch my quill!"
+
+ devote_to_god_decision:0 "Choose Patron God"
+ devote_to_god_desc:0 "For too long my faith in the Gods has been shallow; by choosing a Patron God, perhaps I will once again be guided on the path to divinity."
+ devote_to_god_tooltip:0 "I will choose which deity of our #V Pantheon#! shall guide me"
+ devote_to_god_decision_confirm:0 "I will choose"
+
+ change_devote_god_decision:0 "Change Patron God"
+ change_devote_god_desc:0 "Perhaps I was too hasty in my initial choice, for I feel that I chose the wrong god to devote myself to. Now may be the time to change my decision."
+ change_devote_god_tooltip:0 "I will choose a different deity to guide me"
+ change_devote_god_decision_confirm:0 "I will choose"

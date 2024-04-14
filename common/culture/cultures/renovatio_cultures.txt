@@ -1,0 +1,30 @@
+roman = {
+	color = { 0.8 0.1 0.1 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_latin
+	language = language_latin
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_roman_martial
+		tradition_legalistic
+		tradition_descendants_of_romulus
+		tradition_poetry
+		# tradition_hereditary_hierarchy
+		tradition_noble_adoption
+		tradition_patricians_and_plebeians
+	}
+	
+	name_list = name_list_roman
+
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx } 
+	building_gfx = { mediterranean_building_gfx } 
+	clothing_gfx = { byzantine_clothing_gfx } 
+	clothing_gfx = { western_clothing_gfx } 
+	unit_gfx = { eastern_unit_gfx } 		
+
+	ethnicities = {
+		10 = mediterranean
+		10 = caucasian_dark_hair
+	}
+}

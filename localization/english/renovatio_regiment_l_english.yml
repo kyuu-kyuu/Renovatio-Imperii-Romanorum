@@ -1,0 +1,11 @@
+﻿l_english:
+
+ # Names
+ equites:0 "Equites Cataphractarii"
+ legion:0 "Legionarius"
+ ballista:0 "Ballistae"
+
+ # Descriptions
+ cataphract_flavor:0 "#F Armored in coats of iron, Greek Cataphracts can break almost any defensive line with their charge.#!"
+ equites_flavor:0 "#F The fully armored ace of the Roman military, Equites Cataphractarii can turn the tide of battle with just one charge."
+ legion_flavor:0 "#F The basic unit of heavy infantry in the Roman Empire, Roman Legionnaires are among the greatest warriors in the world.#!"

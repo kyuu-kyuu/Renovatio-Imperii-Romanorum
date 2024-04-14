@@ -1,0 +1,31 @@
+﻿l_english:
+ renovatio_event.0001.t:0 "Choosing a Patron God"
+ renovatio_event.0001.desc:0 "Strolling through the palace gardens after dealing with today's affairs, I find my mind wandering to matters or faith. Of late, I have felt that it may be time for me to choose a #V Patron God#! whom I can devote myself to fully. In the end, I think I'll choose..."
+ renovatio_event.0001.a:0 "Jupiter Optimus Maximus!"
+ renovatio_event.0001.b:0 "Mars, God of War!"
+ renovatio_event.0001.c:0 "Sol Invictus!"
+ renovatio_event.0001.d:0 "Minerva, Goddess of Wisdom!"
+ renovatio_event.0001.e:0 "Venus, Goddess of Love!"
+
+ renovatio_event.0002.t:0 "Changing Patron God"
+ renovatio_event.0002.desc:0 "Strolling through the palace gardens after dealing with today's affairs, I find myself thinking back to the day that I chose a #V Patron God#!. Since then, I've felt as though I was too hasty in my decision, and a different God would suit me better. I think I should really decote myself to..."
+ renovatio_event.0002.a:0 "Jupiter Optimus Maximus!"
+ renovatio_event.0002.b:0 "Mars, God of War!"
+ renovatio_event.0002.c:0 "Sol Invictus!"
+ renovatio_event.0002.d:0 "Minerva, Goddess of Wisdom!"
+ renovatio_event.0002.e:0 "Venus, Goddess of Love!"
+
+ renovatio_event.0003.t:0 "A Vestal Virgin?"
+ renovatio_event.0003.desc:0 "My daughter will soon hit puberty, and the question of whether or not to petition the Pontifex Maximus to make her a #V Vestal Virgin#! has been eating away at me. While this would significantly increase her status, it would also mean that she will never experience the joyous youth of a young [duahgter_1.GetCulture] girl."
+ renovatio_event.0003.a:0 "[daughter_1.GetName] shall embark on this path."
+ renovatio_event.0003.b:0 "[daughter_2.GetName] is the best choice."
+ renovatio_event.0003.c:0 "Both of my daughters shall become Vestal Virgins!"
+ renovatio_event.0003.d:0 "No, this isn't right."
+
+ renovatio_event.0004.t:0 "Refusal!"
+ renovatio_event.0004.desc:0 "As I peer over some work in my council chamber, a servant hurridely approaches me. He bows before handing me a letter and scurrying off. Unfurling the letter, I can see the seal of the Pontifex Maximus, which likely means this is a response to my query in regards to a priesthood for my daughter.\n\nIncredibly, it seems that the Pontifex Maximus has the gaul to deny my request!"
+ renovatio_event.0004.a:0 "Unbelievable!"
+
+ renovatio_event.0005.t:0 "A Vestal Virgin."
+ renovatio_event.0005.desc:0 "As I peer over some work in my council chamber, a servant hurridely approaches me. He bows before handing me a letter and scurrying off. Unfurling the letter, I can see the seal of the Pontifex Maximus, which likely means this is a response to my query in regards to a priesthood for my daughter.\n\nLuckily, it seems that the Pontifex has seen fit to grant my request!"
+ renovatio_event.0005.a:0 "Excellent."
